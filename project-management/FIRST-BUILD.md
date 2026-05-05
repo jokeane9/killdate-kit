@@ -2,7 +2,7 @@
 
 The Minimum Viable Build is the smallest build that proves your stack works end-to-end on real infrastructure. Not a proof of concept, not a prototype — the real stack, one thin vertical slice, running in production.
 
-Use `docs/pre-build-lock.md` for your MVB, just like any other feature build. This doc explains how each gate applies to an MVB specifically, what's N/A, and the one pre-step that doesn't exist in regular builds.
+Use `project-management/FEATURE-LOCK.md` for your MVB, just like any other feature build. This doc explains how each gate applies to an MVB specifically, what's N/A, and the one pre-step that doesn't exist in regular builds.
 
 ---
 
