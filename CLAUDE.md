@@ -24,8 +24,8 @@ Every change lands inside a working product. Two templates make this safe:
 
 | Doc | What it is | When to use |
 |---|---|---|
-| `docs/pre-build-lock.md` | Scope lock per feature. IN list, OUT list, blast radius, kill date. | Before any code is written |
-| `docs/runbook-template.md` | Task spec for Cursor. FILES · TYPES · SKELETON · PROHIBITED · VALIDATE. | One per Cursor task |
+| `project-management/PRE-BUILD-LOCK-TEMPLATE.md` | Scope lock per feature. IN list, OUT list, blast radius, kill date. | Before any code is written |
+| `feature-builds/_playbook/BUILD-RULES.md` | Task spec for Cursor. FILES · TYPES · SKELETON · PROHIBITED · VALIDATE. | One per Cursor task |
 
 **The single invariant every build tests against:** `V(N+1) = V(N) + exactly one surgical change`. If the build can't be expressed that way, split it.
 
@@ -89,7 +89,7 @@ Never ask Cursor to plan. Never ask Claude Code to execute without a runbook. Dr
 
 Before any feature touches production code, in this order:
 
-1. **Lock** — copy `docs/pre-build-lock.md` into `feature-builds/[feature]/PRE-BUILD-LOCK.md` and fill every gate. A blank or TBD gate blocks the build.
+1. **Lock** — copy `project-management/PRE-BUILD-LOCK-TEMPLATE.md` into `feature-builds/[feature]/PRE-BUILD-LOCK.md` and fill every gate. A blank or TBD gate blocks the build.
 2. **Mocks** — approve the output shape before Cursor opens a file. Full-surround render + side-by-side diff. The point is: you've seen what "done" looks like before execution starts.
 3. **Runbook** — one runbook per Cursor task, five blocks, no exceptions.
 4. **Review** — after every task, before the next one.
@@ -192,8 +192,9 @@ Don't load these at session start. Read them when the task requires it.
 | `project-management/CANONICAL.md` | Before any feature touching user-facing language, positioning, or product behavior |
 | `project-management/ARCHITECTURE.md` | Before any deploy, or any change to how layers connect |
 | `project-management/STACK.md` | Before any permanent or architecture decision |
-| `docs/pre-build-lock.md` | Before writing any code for a feature |
-| `docs/runbook-template.md` | When writing a Cursor task |
-| `docs/build-learnings.md` | Before writing any runbook — especially UI-heavy or multi-step builds |
-| `docs/deploy-checklist.md` | When deploying |
-| `docs/mvb-scope.md` | When scoping the first build on this project |
+| `project-management/TESTING-LEARNINGS.md` | Before any session where tests are the primary work |
+| `project-management/PRE-BUILD-LOCK-TEMPLATE.md` | Before writing any code for a feature |
+| `project-management/DEPLOY-CHECKLIST.md` | When deploying |
+| `project-management/MVB-SCOPE.md` | When scoping the first build on this project |
+| `feature-builds/_playbook/BUILD-RULES.md` | When writing a Cursor task |
+| `feature-builds/_playbook/BUILD-LEARNINGS.md` | Before writing any runbook — especially UI-heavy or multi-step builds |

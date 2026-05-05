@@ -12,9 +12,9 @@ The blog is the scaffolding. This is the tool.
 |---|---|
 | `CLAUDE.md` | Persistent context for Claude Code. Skeleton — fill in your product, stack, and deploy target before your first session. |
 | `.cursor/rules/` | Three rules enforcing the Claude Code / Cursor boundary. These travel project to project unchanged. |
-| `docs/` | Process templates: runbook, pre-build lock, MVB scope, deploy checklist. |
-| `project-management/` | State files: log, roadmap, known issues, stack, canonical, architecture. Stubs — you populate these as you work. |
-| `feature-builds/` | Folder structure for per-feature build artifacts (locks, runbooks). |
+| `project-management/` | State files (log, roadmap, known issues, stack, canonical, architecture) + process templates (pre-build lock, deploy checklist, MVB scope). Stubs — you populate as you work. |
+| `feature-builds/` | Per-feature build artifacts. `_playbook/` has the runbook template and build learnings. `_completed/`, `_iterations/`, `_ux-reference/` mirror the Shelf folder pattern. |
+| `devops/` | Deploy and validation scripts. Populate as you build them. |
 
 ## First session
 
