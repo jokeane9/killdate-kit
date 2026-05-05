@@ -150,5 +150,6 @@ Don't load these at session start. Read them when the task requires it.
 | `project-management/STACK.md` | Before any permanent or architecture decision |
 | `docs/pre-build-lock.md` | Before writing any code for a feature |
 | `docs/runbook-template.md` | When writing a Cursor task |
+| `docs/build-learnings.md` | Before writing any runbook — especially for UI-heavy or multi-step builds |
 | `docs/deploy-checklist.md` | When deploying |
 | `docs/mvb-scope.md` | When scoping the first build on this project |
